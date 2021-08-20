@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>SACLA Conference Paper Management System</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome To SACLA</h2>
+        <p>
+            Welcome to SACLA papers submissions sysytem. 
+            Make use of this application to submit, edit and read all of the papers that have been submitted
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>News</h2>
+        <p>Visit the news page to stay up to date with the latest technological advancements in South Africa</p>
+        <p><a class="btn btn-default" @Html.ActionLink("News", "About", "Home")</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Contact Us</h2>
+        <p>Have Any Questions or would like to talk to us ? Contact us Throgh these ways:</p>
+        <p><a class="btn btn-default " @Html.ActionLink("Contact Us", "Contact", "Home")</a></p>
+    </div>
+</div>

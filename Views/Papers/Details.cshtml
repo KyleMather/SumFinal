@@ -1,0 +1,66 @@
+﻿@model SumFinal.Models.Papper
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Papper</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperAbstract)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperAbstract)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSubmitted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopicID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopicID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
